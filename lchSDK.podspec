@@ -10,3 +10,4 @@ s.source       = {:git => 'https://github.com/lch872/lchSDK.git', :tag => s.vers
 s.source_files = 'lchSDK/**/*.{h,m}'
 s.requires_arc = true
 end
+
