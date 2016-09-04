@@ -25,7 +25,7 @@
     UILabel *view = [[UILabel alloc] initWithFrame:CGRectMake(50,50, 100, 100)];
     view.backgroundColor = [UIColor greenColor];
     self.myview = view;
-    [self.myview underlineStr:@"好吧吧"];
+    [self.myview underlineStr:@"好吧吧试试时时"];
     [self.view addSubview:view];
 
     
