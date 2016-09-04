@@ -11,10 +11,9 @@ s.source       = {:git => 'https://github.com/lch872/lchSDK.git', :tag => s.vers
 s.requires_arc = true
 
 s.subspec 'Category' do |cate|
-
+#cate.source_files = 'lchSDK/Category/**/*.{h,m}'
 cate.subspec 'NS' do |ns|
 ns.source_files = 'lchSDK/Category/NS/*.{h,m}'
-
 end
 
 cate.subspec 'UI' do |ui|
@@ -26,10 +25,14 @@ end
 
 s.subspec 'Tool' do |tool|
 tool.source_files = 'lchSDK/Tool/*.{h,m}'
+tool.dependency 'lchSDK/Category'
+#tool.dependency 'lchSDK/View'
 end
 
 s.subspec 'View' do |view|
 view.source_files = 'lchSDK/View/*.{h,m}'
+view.dependency 'lchSDK/Category'
+#view.dependency 'lchSDK/Tool'
 end
 
 end

@@ -6,7 +6,7 @@
 //  Copyright © 2015年 lch. All rights reserved.
 //
 
-#import "lchConst.h"
+//#import "lchConst.h"
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 @interface WTUtility : NSObject

@@ -7,7 +7,6 @@
 //
 
 #import "UILabel+lch.h"
-#import "lchConst.h"
 
 @implementation UILabel (lch)
 
@@ -31,7 +30,7 @@
 
 /** 有下划线的 */
 - (void)underlineStr:(NSString *)string {
-    if (WTStrIsEmpty(string)) return;
+    if (string.length == 0) return;
     NSMutableAttributedString *attri = [[NSMutableAttributedString alloc] initWithString:string];
     [attri addAttribute:NSUnderlineStyleAttributeName value:@(NSUnderlinePatternSolid | NSUnderlineStyleSingle) range:NSMakeRange(0, string.length)];
     [self setAttributedText:attri];

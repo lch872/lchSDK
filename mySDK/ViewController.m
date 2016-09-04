@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "UILabel+lch.h"
-#import "lchConst.h"
+
 
 
 

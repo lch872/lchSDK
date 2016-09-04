@@ -6,8 +6,11 @@
 //  Copyright © 2015年 lch. All rights reserved.
 //
 
-#import "lchConst.h"
+
 #import "WTTextView.h"
+#import "UIView+lch.h"
+#import "NSString+WT.h"
+
 @implementation WTTextView
 
 - (void)setPlaceHolder:(NSString *)placeHolder {

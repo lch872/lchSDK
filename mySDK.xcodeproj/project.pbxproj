@@ -58,7 +58,6 @@
 		E02EBDA11D7C373700144521 /* NSString+WT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WT.m"; sourceTree = "<group>"; };
 		E02EBDA21D7C373700144521 /* NSTimer+WT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+WT.h"; sourceTree = "<group>"; };
 		E02EBDA31D7C373700144521 /* NSTimer+WT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+WT.m"; sourceTree = "<group>"; };
-		E02EBDB91D7C373700144521 /* lchConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lchConst.h; sourceTree = "<group>"; };
 		E02EBDBB1D7C373700144521 /* WTUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTUtility.h; sourceTree = "<group>"; };
 		E02EBDBC1D7C373700144521 /* WTUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTUtility.m; sourceTree = "<group>"; };
 		E02EBDBE1D7C373700144521 /* WTTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTTextField.h; sourceTree = "<group>"; };
@@ -99,6 +98,7 @@
 		E02EBE481D7C632A00144521 /* UIView+lch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+lch.h"; sourceTree = "<group>"; };
 		E02EBE491D7C632A00144521 /* UIView+lch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+lch.m"; sourceTree = "<group>"; };
 		E02EBE561D7C63AF00144521 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		E0AEB59C1D7C9DCF00F874ED /* lchConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lchConst.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +156,7 @@
 		E02EBD991D7C373700144521 /* lchSDK */ = {
 			isa = PBXGroup;
 			children = (
+				E0AEB59C1D7C9DCF00F874ED /* lchConst.h */,
 				E02EBD9A1D7C373700144521 /* Category */,
 				E02EBDB71D7C373700144521 /* Tool */,
 				E02EBDBD1D7C373700144521 /* View */,
@@ -198,7 +199,6 @@
 			children = (
 				E02EBE561D7C63AF00144521 /* Singleton.h */,
 				E02EBE051D7C3CA900144521 /* LXMacro.h */,
-				E02EBDB91D7C373700144521 /* lchConst.h */,
 				E02EBDFC1D7C3C9800144521 /* HelperUtil.h */,
 				E02EBDFD1D7C3C9800144521 /* HelperUtil.m */,
 				E02EBDBB1D7C373700144521 /* WTUtility.h */,
