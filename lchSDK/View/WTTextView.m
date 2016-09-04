@@ -6,7 +6,7 @@
 //  Copyright © 2015年 lch. All rights reserved.
 //
 
-#import "WTConst.h"
+#import "lchConst.h"
 #import "WTTextView.h"
 @implementation WTTextView
 

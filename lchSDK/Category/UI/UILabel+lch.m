@@ -7,7 +7,7 @@
 //
 
 #import "UILabel+lch.h"
-#import "WTConst.h"
+#import "lchConst.h"
 
 @implementation UILabel (lch)
 

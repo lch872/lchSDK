@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "UILabel+lch.h"
-#import "WTConst.h"
+#import "lchConst.h"
 
 
 
@@ -36,6 +36,6 @@
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    NSLog(@" %@ ",@"DDDDDD");
+    NSLog(@" %@\\得到f ",@"44");
 }
 @end

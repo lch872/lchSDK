@@ -11,7 +11,7 @@
 @implementation UIColor (Hex)
 
 + (UIColor *)colorWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue{
-    return [UIColor colorWithRed:red green:green blue:blue alpha:1];
+    return [UIColor colorWithRed:red/255.0 green:green/255.0 blue:blue/255.0 alpha:1];
 }
 
 + (UIColor *)colorWithHexString:(NSString *)color alpha:(CGFloat)alpha
