@@ -151,51 +151,51 @@
  *  保存到指定相册名字
  */
 - (void)savedToAlbum_AlbumName:(NSString *)AlbumName sucBlack:(void (^)())completeBlock failBlock:(void (^)())failBlock {
-    ALAssetsLibrary *ass = [[ALAssetsLibrary alloc] init];
-    [ass writeImageToSavedPhotosAlbum:self.CGImage orientation:(ALAssetOrientation) self.imageOrientation completionBlock:^(NSURL *assetURL, NSError *error) {
-        __block BOOL albumWasFound = NO;
-        ALAssetsLibrary *assetsLibrary = [[ALAssetsLibrary alloc] init];
-        //search all photo albums in the library
-        [assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAlbum usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
-            //判断相册是否存在
-            if ([AlbumName compare:[group valueForProperty:ALAssetsGroupPropertyName]] == NSOrderedSame) {
-                //存在
-                albumWasFound = YES;
-                [assetsLibrary assetForURL:assetURL resultBlock:^(ALAsset *asset) {
-                    if ([group addAsset:asset]) {
-                        completeBlock();
-                    }
-                }
-                    failureBlock:^(NSError *error) {
-                        failBlock();
-                    }];
-                return;
-            }
-            //如果不存在该相册创建
-            if (group == nil && albumWasFound == NO) {
-                __weak ALAssetsLibrary *weakSelf = assetsLibrary;
-                //创建相册
-                [assetsLibrary addAssetsGroupAlbumWithName:AlbumName resultBlock:^(ALAssetsGroup *group) {
-                    [weakSelf assetForURL:assetURL
-                        resultBlock:^(ALAsset *asset) {
-                            if ([group addAsset:asset]) {
-                                completeBlock();
-                            }
-                        }
-                        failureBlock:^(NSError *error) {
-                            failBlock();
-                        }];
-                }
-                    failureBlock:^(NSError *error) {
-                        failBlock();
-                    }];
-                return;
-            }
-        }
-            failureBlock:^(NSError *error) {
-                failBlock();
-            }];
-    }];
+//    ALAssetsLibrary *ass = [[ALAssetsLibrary alloc] init];
+//    [ass writeImageToSavedPhotosAlbum:self.CGImage orientation:(ALAssetOrientation) self.imageOrientation completionBlock:^(NSURL *assetURL, NSError *error) {
+//        __block BOOL albumWasFound = NO;
+//        ALAssetsLibrary *assetsLibrary = [[ALAssetsLibrary alloc] init];
+//        //search all photo albums in the library
+//        [assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAlbum usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
+//            //判断相册是否存在
+//            if ([AlbumName compare:[group valueForProperty:ALAssetsGroupPropertyName]] == NSOrderedSame) {
+//                //存在
+//                albumWasFound = YES;
+//                [assetsLibrary assetForURL:assetURL resultBlock:^(ALAsset *asset) {
+//                    if ([group addAsset:asset]) {
+//                        completeBlock();
+//                    }
+//                }
+//                    failureBlock:^(NSError *error) {
+//                        failBlock();
+//                    }];
+//                return;
+//            }
+//            //如果不存在该相册创建
+//            if (group == nil && albumWasFound == NO) {
+//                __weak ALAssetsLibrary *weakSelf = assetsLibrary;
+//                //创建相册
+//                [assetsLibrary addAssetsGroupAlbumWithName:AlbumName resultBlock:^(ALAssetsGroup *group) {
+//                    [weakSelf assetForURL:assetURL
+//                        resultBlock:^(ALAsset *asset) {
+//                            if ([group addAsset:asset]) {
+//                                completeBlock();
+//                            }
+//                        }
+//                        failureBlock:^(NSError *error) {
+//                            failBlock();
+//                        }];
+//                }
+//                    failureBlock:^(NSError *error) {
+//                        failBlock();
+//                    }];
+//                return;
+//            }
+//        }
+//            failureBlock:^(NSError *error) {
+//                failBlock();
+//            }];
+//    }];
 }
 
 /**

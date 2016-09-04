@@ -10,7 +10,7 @@
         
         JSONData = [NSJSONSerialization dataWithJSONObject:self options:NSJSONWritingPrettyPrinted error:nil];
     } else if ([self isKindOfClass:[NSObject class]]) {        // 如果self是继承NSObject的非字典对象
-#warning 还没有设置
+
        // JSONData = [NSJSONSerialization dataWithJSONObject:self.keyValues options:NSJSONWritingPrettyPrinted error:nil];
     }
     

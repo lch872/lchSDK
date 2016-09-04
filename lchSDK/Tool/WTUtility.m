@@ -223,12 +223,12 @@ void after_Run(float time, void (^block)(void)) {
     if (authStatus == AVAuthorizationStatusRestricted) {
         NSLog(@"Restricted");
     } else if (authStatus == AVAuthorizationStatusDenied) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示"
-                                                        message:@"请在设备的设置-隐私-相机 中允许访问相机。"
-                                                       delegate:self
-                                              cancelButtonTitle:@"确定"
-                                              otherButtonTitles:nil];
-        [alert show];
+//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示"
+//                                                        message:@"请在设备的设置-隐私-相机 中允许访问相机。"
+//                                                       delegate:self
+//                                              cancelButtonTitle:@"确定"
+//                                              otherButtonTitles:nil];
+//        [alert show];
         return NO;
     } else if (authStatus == AVAuthorizationStatusAuthorized) { //允许访问
         return YES;
