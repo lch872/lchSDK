@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = 'lchSDK'
-s.version      = '0.0.3'
+s.version      = '0.0.4'
 s.summary      = 'Personal development SDK on iOS'
 s.homepage     = 'https://github.com/lch872/lchSDK'
 s.license      = 'MIT'
