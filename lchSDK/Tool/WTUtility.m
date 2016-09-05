@@ -202,17 +202,7 @@ void after_Run(float time, void (^block)(void)) {
 }
 
 
-//随机
-+ (NSString *)randomStr {
-    const int N = 5;
-    NSString *sourceString = @"ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    NSMutableString *result = [[NSMutableString alloc] init];
-    // srand((int)time(0));
-    for (int i = 0; i < N; i++) {
-        [result appendString:[sourceString substringWithRange:NSMakeRange(rand() % [sourceString length], 1)]];
-    }
-    return result;
-}
+
 
 /**
  *  能否使用相机

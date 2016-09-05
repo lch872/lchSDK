@@ -9,18 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface NSDate (WT)
-/**
- *  判断某个时间是否为今年
- */
-- (BOOL)isThisYear;
-/**
- *  判断某个时间是否为昨天
- */
-- (BOOL)isYesterday;
-/**
- *  判断某个时间是否为今天
- */
-- (BOOL)isToday;
+
+- (BOOL)isThisYear;     /** 判断某个时间是否为今年 */
+- (BOOL)isYesterday;    /** 判断某个时间是否为昨天 */
+- (BOOL)isToday;        /** 判断某个时间是否为今天 */
 
 /** 字符串时间戳。 */
 @property (nonatomic, copy, readonly) NSString *timeStamp;
@@ -191,16 +183,12 @@
  */
 - (BOOL)sameMonthWithDate:(NSDate *)otherDate;
 
-/** 多久以前呢 ？ 1分钟内 X分钟前 X天前 */
-- (NSString *)whatTimeAgo;
 
-/** 前段时间日期的描述 上午？？ 星期二 下午？？ */
-- (NSString *)whatTimeBefore;
+- (NSString *)whatTimeAgo;      /** 多久以前呢 ？ 1分钟内 X分钟前 X天前 */
 
-/**
- *  今天星期几来着？
- */
-- (NSString *)whatDayTheWeek;
+- (NSString *)whatTimeBefore;   /** 前段某时间日期的描述 上午？？ 星期二 下午？？ */
+
+- (NSString *)whatDayTheWeek;   /** 今天星期几来着？*/
 
 /** YYYY-MM-dd HH:mm:ss */
 - (NSString *)WT_YYYYMMddHHmmss;

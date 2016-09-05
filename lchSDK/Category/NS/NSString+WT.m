@@ -191,8 +191,12 @@ static NSDateFormatter *YYYYMMddDot;
 - (NSString *)addInt:(int)string {
     return [self stringByAppendingString:@(string).stringValue];
 }
+
+
+
+
 //32位MD5加密
-- (NSString *)MD5 {
+- (NSString *)MD5Strig {
     const char *cStr = [self UTF8String];
     unsigned char digest[CC_MD5_DIGEST_LENGTH];
     CC_MD5(cStr, (CC_LONG) strlen(cStr), digest);
@@ -203,7 +207,7 @@ static NSDateFormatter *YYYYMMddDot;
     return [result copy];
 }
 //SHA1加密
-- (NSString *)SHA1 {
+- (NSString *)SHA1Strig {
     const char *cStr = [self UTF8String];
     NSData *data = [NSData dataWithBytes:cStr length:self.length];
     uint8_t digest[CC_SHA1_DIGEST_LENGTH];
@@ -252,7 +256,7 @@ static NSDateFormatter *YYYYMMddDot;
 #pragma mark -
 
 //是否中文
-- (BOOL)isChinese {
+- (BOOL)isPureChinese {
     NSString *match = @"(^[\u4e00-\u9fa5]+$)";
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF matches %@", match];
     return [predicate evaluateWithObject:self];
@@ -367,7 +371,6 @@ static NSDateFormatter *YYYYMMddDot;
     for (float i = 0; i < length; i++) {
         // NSString * c=[mytimestr characterAtIndex:i];
         NSString *STR = [self substringWithRange:NSMakeRange(i, 1)];
-        NSLog(@"%@", STR);
         if ([STR isNumber]) {
             continue;
         } else {
@@ -412,13 +415,18 @@ static NSDateFormatter *YYYYMMddDot;
     return (__bridge_transfer NSString *) uuid;
 }
 
-@end
 
-@implementation NSDictionary (WT)
-
-//字典 转为 JsonStr
-- (NSString *)jsonStr {
-    return [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:self options:0 error:NULL] encoding:NSUTF8StringEncoding];
+/**返回随机大写字母*/
++ (NSString *)randomStringWithABC{
+    const int N = 5;
+    NSString *sourceString = @"ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    NSMutableString *result = [[NSMutableString alloc] init];
+    // srand((int)time(0));
+    for (int i = 0; i < N; i++) {
+        [result appendString:[sourceString substringWithRange:NSMakeRange(rand() % [sourceString length], 1)]];
+    }
+    return result;
 }
+
 
 @end

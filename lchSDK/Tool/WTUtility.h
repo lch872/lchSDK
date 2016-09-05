@@ -66,13 +66,6 @@ void after_Run(float time, void (^block)(void));
  */
 + (void)btnSuddenlyTouch:(UIButton *)senderBtn;
 
-
-
-/**
- *  随机
- */
-+ (NSString *)randomStr;
-
 /**
  *  能否使用相机 不能用就alertview提示下
  */

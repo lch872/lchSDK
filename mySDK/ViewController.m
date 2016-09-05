@@ -7,14 +7,16 @@
 //
 
 #import "ViewController.h"
-#import "UILabel+lch.h"
+#import "lchSDK.h"
 
-
-
+#import "WTUtility.h"
+#import "NSString+WT.h"
+#import "NSDictionary+lch.h"
 
 
 @interface ViewController ()
 @property (nonatomic,weak) UILabel *myview;
+
 @end
 
 @implementation ViewController
@@ -28,14 +30,21 @@
     [self.myview underlineStr:@"好吧吧试试时时"];
     [self.view addSubview:view];
 
+    NSDictionary *dict = @{@"123":@"一二三",@"456":@"四五六"};
+    NSString *str = @"123,456,789,963,852,44";
     
-}
-
-- (void)lch{
-    NSLog(@" %@ ",@"点击了");
+//    NSArray *aay = [str combinArr];
+//    if ([str isPureNumber]) {
+//        NSLog(@"是纯数字 ");
+//    }
+    
+    NSLog(@"5   %@ ",[@"123" MD5Strig]);
+    NSLog(@"a   %@ ",[@"123" SHA1Strig]);
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    NSLog(@" %@\\得到f ",@"44");
+
 }
+
+
 @end

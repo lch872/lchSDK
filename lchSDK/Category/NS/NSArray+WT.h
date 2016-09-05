@@ -24,10 +24,9 @@
  *  数组 转为 JsonStr
  */
 @property (nonatomic, copy, readonly) NSString *jsonStr;
-/**
- *  合并成用，逗号隔开的字符创
- */
-@property (nonatomic, copy, readonly) NSString *combinStr;
+
+/** 合并成用，逗号隔开的string*/
+- (NSString *)combinStr;
 /**
  *  请接收返回的数组 按 字段 给数组排序
  */

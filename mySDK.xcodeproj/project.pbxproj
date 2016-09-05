@@ -20,14 +20,9 @@
 		E02EBDD11D7C373700144521 /* WTUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E02EBDBC1D7C373700144521 /* WTUtility.m */; };
 		E02EBDD21D7C373700144521 /* WTTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E02EBDBF1D7C373700144521 /* WTTextField.m */; };
 		E02EBDD31D7C373700144521 /* WTTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E02EBDC11D7C373700144521 /* WTTextView.m */; };
-		E02EBDE31D7C3B5200144521 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = E02EBDE21D7C3B5200144521 /* NSTimer+Addition.m */; };
-		E02EBDE91D7C3BBE00144521 /* NSDictionary+PropertyCode.m in Sources */ = {isa = PBXBuildFile; fileRef = E02EBDE81D7C3BBE00144521 /* NSDictionary+PropertyCode.m */; };
-		E02EBDEC1D7C3BC600144521 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = E02EBDEB1D7C3BC600144521 /* NSObject+JSON.m */; };
 		E02EBDFE1D7C3C9800144521 /* HelperUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E02EBDFD1D7C3C9800144521 /* HelperUtil.m */; };
 		E02EBE011D7C3C9D00144521 /* lchFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E02EBE001D7C3C9D00144521 /* lchFileManager.m */; };
 		E02EBE4A1D7C632A00144521 /* CALayer+lch.m in Sources */ = {isa = PBXBuildFile; fileRef = E02EBE351D7C632A00144521 /* CALayer+lch.m */; };
-		E02EBE4B1D7C632A00144521 /* Checkmark_failure_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E02EBE361D7C632A00144521 /* Checkmark_failure_white@2x.png */; };
-		E02EBE4C1D7C632A00144521 /* Checkmark_success_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E02EBE371D7C632A00144521 /* Checkmark_success_white@2x.png */; };
 		E02EBE4D1D7C632A00144521 /* UIBarButtonItem+HYBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E02EBE391D7C632A00144521 /* UIBarButtonItem+HYBarButtonItem.m */; };
 		E02EBE4E1D7C632A00144521 /* UIBarButtonItem+WT.m in Sources */ = {isa = PBXBuildFile; fileRef = E02EBE3B1D7C632A00144521 /* UIBarButtonItem+WT.m */; };
 		E02EBE4F1D7C632A00144521 /* UIButton+lch.m in Sources */ = {isa = PBXBuildFile; fileRef = E02EBE3D1D7C632A00144521 /* UIButton+lch.m */; };
@@ -37,6 +32,8 @@
 		E02EBE531D7C632A00144521 /* UILabel+lch.m in Sources */ = {isa = PBXBuildFile; fileRef = E02EBE451D7C632A00144521 /* UILabel+lch.m */; };
 		E02EBE541D7C632A00144521 /* UITextView+WT.m in Sources */ = {isa = PBXBuildFile; fileRef = E02EBE471D7C632A00144521 /* UITextView+WT.m */; };
 		E02EBE551D7C632A00144521 /* UIView+lch.m in Sources */ = {isa = PBXBuildFile; fileRef = E02EBE491D7C632A00144521 /* UIView+lch.m */; };
+		E04A88311D7D6D700012F504 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E04A88301D7D6D700012F504 /* NSArray+Log.m */; };
+		E04A88341D7D73190012F504 /* NSDictionary+lch.m in Sources */ = {isa = PBXBuildFile; fileRef = E04A88331D7D73190012F504 /* NSDictionary+lch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,12 +61,6 @@
 		E02EBDBF1D7C373700144521 /* WTTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTextField.m; sourceTree = "<group>"; };
 		E02EBDC01D7C373700144521 /* WTTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTTextView.h; sourceTree = "<group>"; };
 		E02EBDC11D7C373700144521 /* WTTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTextView.m; sourceTree = "<group>"; };
-		E02EBDE11D7C3B5200144521 /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
-		E02EBDE21D7C3B5200144521 /* NSTimer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Addition.m"; sourceTree = "<group>"; };
-		E02EBDE71D7C3BBE00144521 /* NSDictionary+PropertyCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+PropertyCode.h"; sourceTree = "<group>"; };
-		E02EBDE81D7C3BBE00144521 /* NSDictionary+PropertyCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+PropertyCode.m"; sourceTree = "<group>"; };
-		E02EBDEA1D7C3BC600144521 /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
-		E02EBDEB1D7C3BC600144521 /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSON.m"; sourceTree = "<group>"; };
 		E02EBDFC1D7C3C9800144521 /* HelperUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperUtil.h; sourceTree = "<group>"; };
 		E02EBDFD1D7C3C9800144521 /* HelperUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperUtil.m; sourceTree = "<group>"; };
 		E02EBDFF1D7C3C9D00144521 /* lchFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lchFileManager.h; sourceTree = "<group>"; };
@@ -77,8 +68,6 @@
 		E02EBE051D7C3CA900144521 /* LXMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXMacro.h; sourceTree = "<group>"; };
 		E02EBE341D7C632A00144521 /* CALayer+lch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+lch.h"; sourceTree = "<group>"; };
 		E02EBE351D7C632A00144521 /* CALayer+lch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+lch.m"; sourceTree = "<group>"; };
-		E02EBE361D7C632A00144521 /* Checkmark_failure_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checkmark_failure_white@2x.png"; sourceTree = "<group>"; };
-		E02EBE371D7C632A00144521 /* Checkmark_success_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checkmark_success_white@2x.png"; sourceTree = "<group>"; };
 		E02EBE381D7C632A00144521 /* UIBarButtonItem+HYBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+HYBarButtonItem.h"; sourceTree = "<group>"; };
 		E02EBE391D7C632A00144521 /* UIBarButtonItem+HYBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HYBarButtonItem.m"; sourceTree = "<group>"; };
 		E02EBE3A1D7C632A00144521 /* UIBarButtonItem+WT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+WT.h"; sourceTree = "<group>"; };
@@ -98,6 +87,10 @@
 		E02EBE481D7C632A00144521 /* UIView+lch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+lch.h"; sourceTree = "<group>"; };
 		E02EBE491D7C632A00144521 /* UIView+lch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+lch.m"; sourceTree = "<group>"; };
 		E02EBE561D7C63AF00144521 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		E04A882F1D7D6D700012F504 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		E04A88301D7D6D700012F504 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		E04A88321D7D73190012F504 /* NSDictionary+lch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+lch.h"; sourceTree = "<group>"; };
+		E04A88331D7D73190012F504 /* NSDictionary+lch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+lch.m"; sourceTree = "<group>"; };
 		E0AEB5C01D7CA2BF00F874ED /* lchSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lchSDK.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,20 +168,18 @@
 		E02EBD9B1D7C373700144521 /* NS */ = {
 			isa = PBXGroup;
 			children = (
-				E02EBDE71D7C3BBE00144521 /* NSDictionary+PropertyCode.h */,
-				E02EBDE81D7C3BBE00144521 /* NSDictionary+PropertyCode.m */,
+				E04A882F1D7D6D700012F504 /* NSArray+Log.h */,
+				E04A88301D7D6D700012F504 /* NSArray+Log.m */,
 				E02EBD9C1D7C373700144521 /* NSArray+WT.h */,
 				E02EBD9D1D7C373700144521 /* NSArray+WT.m */,
+				E04A88321D7D73190012F504 /* NSDictionary+lch.h */,
+				E04A88331D7D73190012F504 /* NSDictionary+lch.m */,
 				E02EBD9E1D7C373700144521 /* NSDate+WT.h */,
 				E02EBD9F1D7C373700144521 /* NSDate+WT.m */,
 				E02EBDA01D7C373700144521 /* NSString+WT.h */,
 				E02EBDA11D7C373700144521 /* NSString+WT.m */,
 				E02EBDA21D7C373700144521 /* NSTimer+WT.h */,
 				E02EBDA31D7C373700144521 /* NSTimer+WT.m */,
-				E02EBDE11D7C3B5200144521 /* NSTimer+Addition.h */,
-				E02EBDE21D7C3B5200144521 /* NSTimer+Addition.m */,
-				E02EBDEA1D7C3BC600144521 /* NSObject+JSON.h */,
-				E02EBDEB1D7C3BC600144521 /* NSObject+JSON.m */,
 			);
 			path = NS;
 			sourceTree = "<group>";
@@ -225,8 +216,6 @@
 			children = (
 				E02EBE341D7C632A00144521 /* CALayer+lch.h */,
 				E02EBE351D7C632A00144521 /* CALayer+lch.m */,
-				E02EBE361D7C632A00144521 /* Checkmark_failure_white@2x.png */,
-				E02EBE371D7C632A00144521 /* Checkmark_success_white@2x.png */,
 				E02EBE381D7C632A00144521 /* UIBarButtonItem+HYBarButtonItem.h */,
 				E02EBE391D7C632A00144521 /* UIBarButtonItem+HYBarButtonItem.m */,
 				E02EBE3A1D7C632A00144521 /* UIBarButtonItem+WT.h */,
@@ -307,11 +296,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E02EBE4C1D7C632A00144521 /* Checkmark_success_white@2x.png in Resources */,
 				E02EBD901D7C360700144521 /* LaunchScreen.storyboard in Resources */,
 				E02EBD8D1D7C360700144521 /* Assets.xcassets in Resources */,
 				E02EBD8B1D7C360700144521 /* Main.storyboard in Resources */,
-				E02EBE4B1D7C632A00144521 /* Checkmark_failure_white@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,9 +313,6 @@
 				E02EBE501D7C632A00144521 /* UIColor+Hex.m in Sources */,
 				E02EBD881D7C360700144521 /* ViewController.m in Sources */,
 				E02EBDD21D7C373700144521 /* WTTextField.m in Sources */,
-				E02EBDE91D7C3BBE00144521 /* NSDictionary+PropertyCode.m in Sources */,
-				E02EBDEC1D7C3BC600144521 /* NSObject+JSON.m in Sources */,
-				E02EBDE31D7C3B5200144521 /* NSTimer+Addition.m in Sources */,
 				E02EBDC21D7C373700144521 /* NSArray+WT.m in Sources */,
 				E02EBE4F1D7C632A00144521 /* UIButton+lch.m in Sources */,
 				E02EBDC51D7C373700144521 /* NSTimer+WT.m in Sources */,
@@ -345,7 +329,9 @@
 				E02EBDC41D7C373700144521 /* NSString+WT.m in Sources */,
 				E02EBE521D7C632A00144521 /* UIImage+WT.m in Sources */,
 				E02EBDD11D7C373700144521 /* WTUtility.m in Sources */,
+				E04A88311D7D6D700012F504 /* NSArray+Log.m in Sources */,
 				E02EBDC31D7C373700144521 /* NSDate+WT.m in Sources */,
+				E04A88341D7D73190012F504 /* NSDictionary+lch.m in Sources */,
 				E02EBE4D1D7C632A00144521 /* UIBarButtonItem+HYBarButtonItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
