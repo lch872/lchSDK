@@ -93,26 +93,7 @@
     return NO;
 }
 
-// 验证是否是数字
-+ (BOOL)isNumber:(NSString *)Character {
-    NSCharacterSet *cs;
-    cs = [NSCharacterSet characterSetWithCharactersInString:@"0123456789"];
-    NSRange specialrang = [Character rangeOfCharacterFromSet:cs];
-    if (specialrang.location != NSNotFound) {
-        return YES;
-    }
-    return NO;
-}
-//震动效果
-+ (CAKeyframeAnimation *)shakeAnimation {
-    CAKeyframeAnimation *shake = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
-    shake.values = @[ [NSValue valueWithCATransform3D:CATransform3DMakeTranslation(-5.0f, 0.0f, 0.0f)], [NSValue valueWithCATransform3D:CATransform3DMakeTranslation(5.0f, 0.0f, 0.0f)] ];
-    shake.autoreverses = YES;
-    shake.repeatCount = 2.0f;
-    shake.duration = 0.07f;
-    return shake;
-    //[Btn.layer addAnimation:shake forKey:nil];
-}
+
 
 /**
  *  代码执行时间
@@ -210,33 +191,30 @@ void after_Run(float time, void (^block)(void)) {
 + (BOOL)canUseCamera {
     NSString *mediaType = AVMediaTypeVideo;
     AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:mediaType];
-    if (authStatus == AVAuthorizationStatusRestricted) {
-        NSLog(@"Restricted");
-    } else if (authStatus == AVAuthorizationStatusDenied) {
-//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示"
-//                                                        message:@"请在设备的设置-隐私-相机 中允许访问相机。"
-//                                                       delegate:self
-//                                              cancelButtonTitle:@"确定"
-//                                              otherButtonTitles:nil];
-//        [alert show];
-        return NO;
-    } else if (authStatus == AVAuthorizationStatusAuthorized) { //允许访问
-        return YES;
-    } else if (authStatus == AVAuthorizationStatusNotDetermined) {
-        [AVCaptureDevice requestAccessForMediaType:mediaType
-                                 completionHandler:^(BOOL granted) {
-                                     if (granted) { //点击允许访问时调用
-                                         //用户明确许可与否，媒体需要捕获，但用户尚未授予或拒绝许可。
-                                         NSLog(@"Granted access to %@", mediaType);
-                                     } else {
-                                         NSLog(@"Not granted access to %@", mediaType);
-                                     }
-                                 }];
-    } else {
-        NSLog(@"Unknown authorization status");
+  
+    switch (authStatus) {
+        case AVAuthorizationStatusRestricted:
+            NSLog(@"Restricted");
+            return NO;
+            break;
+        case AVAuthorizationStatusDenied:
+            NSLog(@"Denied");
+            return NO;
+            break;
+        case AVAuthorizationStatusAuthorized:
+            NSLog(@"Authorized");
+            return YES;
+            break;
+        case AVAuthorizationStatusNotDetermined:
+            NSLog(@"NotDetermined");
+            break;
+            
+        default:
+            NSLog(@"Unknown authorization status");
+            break;
     }
 
-    return YES;
+    return NO;
 }
 
 @end

@@ -40,10 +40,13 @@
     
     NSLog(@"5   %@ ",[@"123" MD5Strig]);
     NSLog(@"a   %@ ",[@"123" SHA1Strig]);
+    
+
+
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-
+    NSLog(@" %ld ",[WTUtility canUseCamera]);
 }
 
 

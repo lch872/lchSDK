@@ -65,7 +65,6 @@
 		E02EBDFD1D7C3C9800144521 /* HelperUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperUtil.m; sourceTree = "<group>"; };
 		E02EBDFF1D7C3C9D00144521 /* lchFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lchFileManager.h; sourceTree = "<group>"; };
 		E02EBE001D7C3C9D00144521 /* lchFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lchFileManager.m; sourceTree = "<group>"; };
-		E02EBE051D7C3CA900144521 /* LXMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXMacro.h; sourceTree = "<group>"; };
 		E02EBE341D7C632A00144521 /* CALayer+lch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+lch.h"; sourceTree = "<group>"; };
 		E02EBE351D7C632A00144521 /* CALayer+lch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+lch.m"; sourceTree = "<group>"; };
 		E02EBE381D7C632A00144521 /* UIBarButtonItem+HYBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+HYBarButtonItem.h"; sourceTree = "<group>"; };
@@ -189,7 +188,6 @@
 			children = (
 				E0AEB5C01D7CA2BF00F874ED /* lchSDK.h */,
 				E02EBE561D7C63AF00144521 /* Singleton.h */,
-				E02EBE051D7C3CA900144521 /* LXMacro.h */,
 				E02EBDFC1D7C3C9800144521 /* HelperUtil.h */,
 				E02EBDFD1D7C3C9800144521 /* HelperUtil.m */,
 				E02EBDBB1D7C373700144521 /* WTUtility.h */,
@@ -452,6 +450,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lch.mySDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -463,6 +462,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lch.mySDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

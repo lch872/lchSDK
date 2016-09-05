@@ -14,6 +14,8 @@
 /** 计算两个经纬的距离 */
 + (double)calculateDistanceWithLatitude:(NSString *)latitudeOne andLongitude:(NSString *)longitudeOne twoDistanceWithLatitude:(NSString *)latitudeTwo andLongitude:(NSString *)longitudeTwo;
 
+
+
 + (void)saveUserInfoDic:(NSMutableDictionary *)dic;
 
 + (void)saveLastUserName:(NSString *)userName password:(NSString *)password;
@@ -26,17 +28,13 @@
 
 + (NSMutableDictionary *)getUserInfoDic;
 
+
+
+
+
 + (BOOL)isASCII:(NSString *)character;
 
 + (BOOL)isSpecialCharacter:(NSString *)character;
-
-// 验证是否是数字
-+ (BOOL)isNumber:(NSString *)character;
-
-/**
- *  震动效果
- */
-+ (CAKeyframeAnimation *)shakeAnimation;
 
 //纯颜色图片
 + (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size;
