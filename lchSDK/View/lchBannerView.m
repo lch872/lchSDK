@@ -60,7 +60,9 @@
         }else {
             urlStr = self.pics[i - 1];
         }
-        [self loadImage:urlStr imageView:imageView];
+      //  [self loadImage:urlStr imageView:imageView];
+        
+#warning 需要实现SDWebImage 的狭隘设置
         
         [self setVFrame:i imageView:imageView];
         [_imgScrollView addSubview:imageView];
@@ -153,6 +155,8 @@
         self.time = [NSTimer scheduledTimerWithTimeInterval:3.0 target:self selector:@selector(nextImage) userInfo:nil repeats:YES];
     }
 }
+
+/*
 #pragma mark 下载图片
 - (void) loadImage:(NSString *)urlStr imageView:(UIImageView *)imgView {
     imgView.layer.borderWidth = 0.3;
@@ -179,7 +183,6 @@
         }
     });
 }
-
 
 #pragma mark 保存图片
 - (void) saveImage:(UIImage *)currentImage withName:(NSString *)imageName
@@ -211,5 +214,6 @@
             result[12], result[13], result[14], result[15]
             ];
 }
+*/
 
 @end
