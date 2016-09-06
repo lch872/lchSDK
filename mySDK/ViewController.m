@@ -7,47 +7,24 @@
 //
 
 #import "ViewController.h"
-#import "lchSDK.h"
+#import "lchBannerView.h"
+//#import "lchSDK.h"
 
-#import "WTUtility.h"
-#import "NSString+WT.h"
-#import "NSDictionary+lch.h"
 
 
 @interface ViewController ()
-@property (nonatomic,weak) UILabel *myview;
-
+@property (nonatomic,copy) NSString *myname;
 @end
+
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    UILabel *view = [[UILabel alloc] initWithFrame:CGRectMake(50,50, 100, 100)];
-    view.backgroundColor = [UIColor greenColor];
-    self.myview = view;
-    [self.myview underlineStr:@"好吧吧试试时时"];
-    [self.view addSubview:view];
-
-    NSDictionary *dict = @{@"123":@"一二三",@"456":@"四五六"};
-    NSString *str = @"123,456,789,963,852,44";
     
-//    NSArray *aay = [str combinArr];
-//    if ([str isPureNumber]) {
-//        NSLog(@"是纯数字 ");
-//    }
+    lchBannerView *banner = [[lchBannerView alloc] initWithFrame:CGRectMake(0, 100, 375, 300)];
+    [self.view addSubview:banner];
     
-    NSLog(@"5   %@ ",[@"123" MD5Strig]);
-    NSLog(@"a   %@ ",[@"123" SHA1Strig]);
     
-
-
 }
-
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    NSLog(@" %ld ",[WTUtility canUseCamera]);
-}
-
-
 @end

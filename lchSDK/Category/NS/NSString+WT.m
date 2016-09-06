@@ -141,7 +141,7 @@ static NSDateFormatter *YYYYMMddDot;
     return [[NSData alloc] initWithBase64EncodedString:self options:0];
 }
 // 转为 base64String
-- (NSString *)base64Str {
+- (NSString *)base64String {
     return [[self dataUsingEncoding:NSUTF8StringEncoding] base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithLineFeed];
 }
 //解 base64为Str 解不了就返回原始的数值

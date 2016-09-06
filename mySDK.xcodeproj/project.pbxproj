@@ -34,6 +34,8 @@
 		E02EBE551D7C632A00144521 /* UIView+lch.m in Sources */ = {isa = PBXBuildFile; fileRef = E02EBE491D7C632A00144521 /* UIView+lch.m */; };
 		E04A88311D7D6D700012F504 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E04A88301D7D6D700012F504 /* NSArray+Log.m */; };
 		E04A88341D7D73190012F504 /* NSDictionary+lch.m in Sources */ = {isa = PBXBuildFile; fileRef = E04A88331D7D73190012F504 /* NSDictionary+lch.m */; };
+		E04A88371D7DE6C20012F504 /* god.m in Sources */ = {isa = PBXBuildFile; fileRef = E04A88361D7DE6C20012F504 /* god.m */; };
+		E0A108221D7ECE5C000140EC /* lchBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A108211D7ECE5C000140EC /* lchBannerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +92,10 @@
 		E04A88301D7D6D700012F504 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 		E04A88321D7D73190012F504 /* NSDictionary+lch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+lch.h"; sourceTree = "<group>"; };
 		E04A88331D7D73190012F504 /* NSDictionary+lch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+lch.m"; sourceTree = "<group>"; };
+		E04A88351D7DE6C20012F504 /* god.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = god.h; sourceTree = "<group>"; };
+		E04A88361D7DE6C20012F504 /* god.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = god.m; sourceTree = "<group>"; };
+		E0A108201D7ECE5C000140EC /* lchBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lchBannerView.h; sourceTree = "<group>"; };
+		E0A108211D7ECE5C000140EC /* lchBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lchBannerView.m; sourceTree = "<group>"; };
 		E0AEB5C01D7CA2BF00F874ED /* lchSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lchSDK.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +139,8 @@
 				E02EBD8E1D7C360700144521 /* LaunchScreen.storyboard */,
 				E02EBD911D7C360700144521 /* Info.plist */,
 				E02EBD801D7C360700144521 /* Supporting Files */,
+				E04A88351D7DE6C20012F504 /* god.h */,
+				E04A88361D7DE6C20012F504 /* god.m */,
 			);
 			path = mySDK;
 			sourceTree = "<group>";
@@ -201,6 +209,8 @@
 		E02EBDBD1D7C373700144521 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E0A108201D7ECE5C000140EC /* lchBannerView.h */,
+				E0A108211D7ECE5C000140EC /* lchBannerView.m */,
 				E02EBDBE1D7C373700144521 /* WTTextField.h */,
 				E02EBDBF1D7C373700144521 /* WTTextField.m */,
 				E02EBDC01D7C373700144521 /* WTTextView.h */,
@@ -313,6 +323,7 @@
 				E02EBDD21D7C373700144521 /* WTTextField.m in Sources */,
 				E02EBDC21D7C373700144521 /* NSArray+WT.m in Sources */,
 				E02EBE4F1D7C632A00144521 /* UIButton+lch.m in Sources */,
+				E04A88371D7DE6C20012F504 /* god.m in Sources */,
 				E02EBDC51D7C373700144521 /* NSTimer+WT.m in Sources */,
 				E02EBE511D7C632A00144521 /* UIImage+RenderMode.m in Sources */,
 				E02EBD851D7C360700144521 /* AppDelegate.m in Sources */,
@@ -322,6 +333,7 @@
 				E02EBE541D7C632A00144521 /* UITextView+WT.m in Sources */,
 				E02EBDD31D7C373700144521 /* WTTextView.m in Sources */,
 				E02EBD821D7C360700144521 /* main.m in Sources */,
+				E0A108221D7ECE5C000140EC /* lchBannerView.m in Sources */,
 				E02EBE4A1D7C632A00144521 /* CALayer+lch.m in Sources */,
 				E02EBE011D7C3C9D00144521 /* lchFileManager.m in Sources */,
 				E02EBDC41D7C373700144521 /* NSString+WT.m in Sources */,
