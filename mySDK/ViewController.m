@@ -13,7 +13,7 @@
 
 
 @interface ViewController ()
-@property (nonatomic,copy) NSString *myname;
+@property (nonatomic,strong) UIView *myname;
 @end
 
 
@@ -22,8 +22,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    lchBannerView *banner = [[lchBannerView alloc] initWithFrame:CGRectMake(0, 100, 375, 300)];
-    [self.view addSubview:banner];
+    self.myname = [[UIView alloc] init];
+   NSLog(@" %@ ",self.myname);
+    printf("retain count = %ld\n",CFGetRetainCount((__bridge CFTypeRef)(self.myname )));
+   //NSLog(@" %@ ",lch);
+    printf("retain count = %ld\n",CFGetRetainCount((__bridge CFTypeRef)(self.myname )));
+    // NSLog(@" %@ ",lch);
+    printf("retain count = %ld\n",CFGetRetainCount((__bridge CFTypeRef)(self.myname )));
+
     
     
 }
