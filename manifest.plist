@@ -17,25 +17,25 @@
 					<key>kind</key>
 					<string>display-image</string>
 					<key>url</key>
-					<string>https://www.baidu.com</string>
+					<string>https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTL3IOgD0ricSnxBeJaa6rZ8rcyZTTqY5ibI5du6k5Co5GibECLRd084xPicxOj8E4IwTFJErAQuCkgexg/132</string>
 				</dict>
 				<dict>
 					<key>kind</key>
 					<string>full-size-image</string>
 					<key>url</key>
-					<string>https://www.baidu.com</string>
+					<string>https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTL3IOgD0ricSnxBeJaa6rZ8rcyZTTqY5ibI5du6k5Co5GibECLRd084xPicxOj8E4IwTFJErAQuCkgexg/132</string>
 				</dict>
 			</array>
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.SolarSoft.SolarWallet</string>
+				<string>com.tikvpn.tikvpn</string>
 				<key>bundle-version</key>
-				<string>1.0</string>
+				<string>2.4.9</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
-				<string>chjz.0</string>
+				<string>TikVPN</string>
 			</dict>
 		</dict>
 	</array>
